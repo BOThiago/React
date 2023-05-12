@@ -1,8 +1,8 @@
-import Titulo from './Titulo'
-import About from './About'
-import State from './State';
-import Navbar from './NavBar';
-import Home from './Home'
+import Titulo from './pages/Titulo'
+import About from './pages/About'
+import State from './pages/State';
+import Navbar from './components/NavBar';
+import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App(){

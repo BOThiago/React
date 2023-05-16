@@ -1,10 +1,10 @@
 function Titulo({nome, paragrafo, cor}){
     return (
-        <div>
-            <h1 style={{color: cor}}>Titulo</h1>
-            <h1>Oi eu sou {nome ? nome : "Fulano"}</h1>
+        <div className="texto">
+            <h1 className="titulo" style={{color: cor}}>Título</h1>
+            <h1 className="titulo">Oi eu sou {nome ? nome : "Fulano"}</h1>
             { paragrafo ?
-            <p>{paragrafo}</p>
+            <p className="descricao-titulo">{paragrafo}</p>
             :
             <p></p>
         }

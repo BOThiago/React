@@ -17,10 +17,14 @@ body {
 }
 
 h1 {
-    text-align: center;
     margin: 30px;
     margin-left: 15%;
     margin-right: 15%;
+    text-align: justify;
+}
+
+.bemVindo {
+    text-align: center;
 }
 
 p {
@@ -36,7 +40,35 @@ p {
 }
 
 #about img {
-    margin-top: 2%;
+    margin-top: 4%;
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 40px;
+    margin: 15px;
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: justify;
+}
+
+.descricao {
+    color: rgb(186, 186, 186);
+    font-size: 20px;
+    text-align: justify;
+}
+
+.descricao-titulo {
+    color: rgb(186, 186, 186);
+    font-size: 20px;
+    margin: 2%;
+    text-align: justify;
 }
 
 #state {
@@ -76,19 +108,38 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 768px) {
-    h1 {
+    .bemVindo {
+        text-align: center;
         font-size: x-large;
-        margin: 30px;
-        margin-left: 12%;
-        margin-right: 12%;
     }
 
-    /* h2 {
-        font-size: medium;
-        margin: 30px;
+    .titulo {
+        font-size: 230%;
+        margin: 15px;
         margin-left: 12%;
         margin-right: 12%;
-    } */
+        text-align: justify;
+    }
+
+    .texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .descricao {
+        color: rgb(186, 186, 186);
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .descricao-titulo {
+        color: rgb(186, 186, 186);
+        font-size: 20px;
+        margin: 4%;
+        text-align: justify;
+    }
 
     input {
         width: 20%;

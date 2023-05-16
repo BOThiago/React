@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Button from "../components/Button/Button"
 
 interface StateProps {
     color: string,
@@ -18,7 +19,7 @@ function State({color}: StateProps){
         <div id="state">
             <h1 style={{color: color}}>{texto}</h1>
             <input type="text" value={inputText} onChange={(e) => {setInputText(e.target.value)}} />
-            <button id="buttonState" onClick={onClick}>UseState Button</button>
+            <Button onClick={onClick} children="Change Text"/>
         </div>
     )
 }

@@ -1,0 +1,21 @@
+#buttonState {
+    margin-top: 2%;
+    background-color: rebeccapurple;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#buttonState:hover {
+    background-color: rgb(127, 72, 183);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    cursor: pointer;
+}

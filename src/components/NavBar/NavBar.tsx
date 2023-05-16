@@ -13,7 +13,9 @@ export function Navbar() {
         <>
             <nav>
                 <div>
-                    <img id="logo" src={logo} alt="Logo"/>
+                    <a href="/">
+                        <img id="logo" src={logo} alt="Logo"/>
+                    </a>
                 </div>
                 <div>
                     <ul className={isOpen ? "menuOpen" : "menu"}>

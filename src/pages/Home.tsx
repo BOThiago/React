@@ -5,7 +5,7 @@ interface homeProps{
 function Home({nome}: homeProps) {
     return (
         <div>
-            <h1>Bem-Vindo, {nome}!</h1>
+            <h1 className="bemVindo">Bem-Vindo, {nome}!</h1>
         </div>
     )
 }

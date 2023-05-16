@@ -4,6 +4,7 @@ nav {
     align-items: center;
     background-color: #000000;
     padding: 20px;
+    justify-content: space-around;
 }
 
 #logo {
@@ -58,6 +59,10 @@ li a:hover {
     }
 
     .menuOpen {
+        display: none;
+    }
+
+    .menuOpen li {
         display: none;
     }
 

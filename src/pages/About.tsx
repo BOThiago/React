@@ -8,9 +8,9 @@ interface AboutProps {
 function About({soma, name, urlimg, color}: AboutProps){
     return (
         <div id="about" >
-            <h1 style={{color: color}}>Sobre mim</h1>
-            <p>Meu nome é {name}</p>
-            <p>A soma é {soma + soma}</p>
+            <h1 className="titulo" style={{color: color}}>Sobre mim</h1>
+            <p className="descricao">Meu nome é {name}</p>
+            <p className="descricao">A soma é {soma + soma}</p>
             <img src={urlimg} alt="" width={150}/>
         </div>
     )

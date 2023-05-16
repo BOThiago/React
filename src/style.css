@@ -17,8 +17,14 @@ body {
 }
 
 h1 {
-    text-align: center;
     margin: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+}
+
+.bemVindo {
+    text-align: center;
 }
 
 p {
@@ -34,7 +40,35 @@ p {
 }
 
 #about img {
-    margin-top: 2%;
+    margin-top: 4%;
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 40px;
+    margin: 15px;
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: justify;
+}
+
+.descricao {
+    color: rgb(186, 186, 186);
+    font-size: 20px;
+    text-align: justify;
+}
+
+.descricao-titulo {
+    color: rgb(186, 186, 186);
+    font-size: 20px;
+    margin: 2%;
+    text-align: justify;
 }
 
 #state {
@@ -42,6 +76,7 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
 }
 
 input {
@@ -72,24 +107,65 @@ input[type="text"]:focus {
     border-bottom: 3px solid rebeccapurple;
 }
 
-#buttonState {
-    margin-top: 2%;
-    background-color: rebeccapurple;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-}
+@media (max-width: 768px) {
+    .bemVindo {
+        text-align: center;
+        font-size: x-large;
+    }
 
-#buttonState:hover {
-    background-color: rgb(127, 72, 183);
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-        0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    float: left;
-    cursor: pointer;
+    .titulo {
+        font-size: 230%;
+        margin: 15px;
+        margin-left: 12%;
+        margin-right: 12%;
+        text-align: justify;
+    }
+
+    .texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .descricao {
+        color: rgb(186, 186, 186);
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .descricao-titulo {
+        color: rgb(186, 186, 186);
+        font-size: 20px;
+        margin: 4%;
+        text-align: justify;
+    }
+
+    input {
+        width: 20%;
+    }
+
+    input[type="text"] {
+        width: 75%;
+        padding: 8px 10px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        font-size: large;
+        border: none;
+    }
+
+    input[type="text"]:hover {
+        width: 75%;
+        padding: 8px 10px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        font-size: large;
+        border-bottom: 3px solid rebeccapurple;
+    }
+
+    input[type="text"]:focus {
+        border: none;
+        outline: none;
+        border-bottom: 3px solid rebeccapurple;
+    }
 }
